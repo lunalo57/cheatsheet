@@ -232,7 +232,7 @@
 // let array3 = ['Js', 'Php', 'Python'];
 // let array4 = ['Ruby', 'React'];
 //g-------------
-//p .concat()
+//p .concat() 
 //c Permet de concatener 2 ou plusieurs tableaux
 // ex let newArray = array3.concat(array4);
 // console.log(newArray) -> renvoie ['Js', 'Php', 'Python','Ruby', 'React'];
@@ -294,3 +294,120 @@
 // const restArray = array.splice(0 , 2, ...array4);
 // console.log(restArray) -> renvoie ["Js","Php"]
 // console.log(array3) -> renvoie ["Ruby", "React", "Python"]
+
+//v IMPORTANT
+//y Pour les prochains exemples, nous utiliserons ce tableau
+//g-------------
+// let arrayN = [4, 74, 28, 12, 1];
+//g-------------
+//p reduce(x,y)
+//c Permet de calculer toutes les valeurs d'un tableau
+//c suivant la façon dont on utilise les paramètres x et y
+// console.log(arrayN.reduce((x,y) => x + y)); -> renvoie 119
+//p push()
+//c Ajoute un élément à la dernière place dans un tableau
+// let arrayN2 = arrayN.push("coucou");
+// console.log(arrayN2) -> renvoie [4, 74, 28, 12, 1, "coucou"];
+
+//v LE TRIO GAGNANT : FILTER / SORT / MAP
+//y Pour les prochains exemples, nous utiliserons ce tableau
+//g-------------
+// let arrayN = [4, 74, 28, 12, 1];
+//g-------------
+//p filter()
+//c Permet de filtrer les éléments d'un tableau 
+//y Ici le wesh est le nom donné à tous les éléments du tableau
+// let arrayN2 = arrayN.filter((wesh) => wesh > 10));
+// console.log(arrayN2) -> renvoie [74, 28, 12];
+//p sort()
+//r Premier exemple - classement selon index sans paramètres
+//c Permet de trier le tableau suivant le 1er index, puis suivant le 2ème...
+//c de la même manière qu'un ordinateur, mais on peut changer ça
+// let arrayN2 = arrayN.sort();
+// console.log(arrayN2) -> renvoie [1, 12, 28, 4, 74];
+//r Deuxième exemple - classement numérique avec paramètres a et b
+//y Utiliser sort() de cette façon peut créer de nombreux problèmes
+//y du coup, on va plutôt l'utiliser avec des paramètres
+// let arrayN2 = arrayN.sort((a,b) => b - a); numériquement croissant
+// console.log(arrayN2) -> renvoie [74, 28, 12, 4, 1];
+// let arrayN2 = arrayN.sort((a,b) => a - b); numériquement décroissant
+// console.log(arrayN2) -> renvoie [1, 4, 12, 28, 74];
+//p map()
+//c Permet d'énumérer 1 par 1 tous les éléments d'un tableau
+//c Fonctionne comme un forEach()
+//y Premier exemple
+// arrayN.map((wesh) => console.log(wesh));
+//o -> renvoie 4 74 28 12 1;
+//y Deuxième exemple
+// arrayN.map((wesh) => document.body.innerHTML += wesh);
+//o -> renvoie à l'écran 47428121;
+//y Troisième exemple
+// arrayN.map((wesh) => document.body.innerHTML += `<li>${wesh}</li>`);
+//o -> renvoie à l'écran une liste à puces
+//y Quatrième exemple, la façon générale d'écrire un map()
+// document.body.innerHTML = arrayN.map((wesh) => `<li>${wesh}</li>`);
+//o -> renvoie à l'écran une liste à puces, chacune séparée par une virgule
+//y Cinquième exemple, le top du top
+// document.body.innerHTML = arrayN
+//      .map((wesh) => `<li>${wesh}</li>`)
+//      .join("");
+//o -> renvoie à l'écran une liste à puces
+
+//v METHODES POUR LES OBJECTS
+//y Pour les prochains exemples, nous utiliserons cet objet
+//g-------------
+// let data = [
+//     {
+//         pseudo : "Denis",
+//         age : 33,
+//         technos : ["Js", "React", "NodeJs"],
+//         admin : false,
+//     },
+//     {
+//         pseudo : "Samia",
+//         age : 24,
+//         technos : ["CSS", "React", "NodeJs"],
+//         admin : false,
+//     },
+//     {
+//         pseudo : "Nikola",
+//         age : 42,
+//         technos : ["Php", "React", "NodeJs"],
+//         admin : true,
+//     }
+// ]
+//g-------------
+//r Lister les utilisateurs et incorporer une classe à la div
+//r et fait une ternaire pour le statut si true or false
+//r et trier les users du plus vieux au plus jeune
+//r et de filtrer les users qui sont plus agés que 24 ans -> TROP FORT!!!
+// document.body.innerHTML = data 
+//     .filter((user) => user.age > 24)
+//     .sort((a,b) => b.age - a.age)
+//     .map(
+//         (user) =>
+//         `
+//         <div class="user-card">
+//         <h2>${user.pseudo}</h2>
+//         <p>Age : ${user.age}</p>
+//         <p>Statut : ${user.admin ? "Modérateur" : "Membre"}</p>
+//         </div>
+//         `
+//     )
+//     .join("");
+
+
+
+
+
+//h-----------------------------------------------------------------------
+
+//j JAVASCRIPT 4/6 LES API                                               
+
+
+
+
+
+
+
+
