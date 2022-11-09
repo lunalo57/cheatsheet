@@ -225,3 +225,72 @@
 //p console.log(Math.pow(2 , 7)); -> renvoie 128
 //p console.log(Math.sqrt(16)); -> renvoie 4
 //p console.log(Math.random()); -> renvoie x : 0 < x < 1
+
+//v METHODES POUR LES ARRAYS
+//y Pour les prochains exemples, nous utiliserons ces tableaux
+//g-------------
+// let array3 = ['Js', 'Php', 'Python'];
+// let array4 = ['Ruby', 'React'];
+//g-------------
+//p .concat()
+//c Permet de concatener 2 ou plusieurs tableaux
+// ex let newArray = array3.concat(array4);
+// console.log(newArray) -> renvoie ['Js', 'Php', 'Python','Ruby', 'React'];
+//p ... les spreads operators
+//c Permet de casser les tableaux
+// ex let newArray = [...array3 , ...array4];
+// console.log(newArray) -> renvoie ['Js', 'Php', 'Python','Ruby', 'React'];
+//p join("")
+//c Permet de casser les tableaux et insère ("") entre les != valeurs
+//y Renvoie une string
+// console.log(array4.join("-")) -> renvoie "Ruby-React"
+//p slice()
+//c Supprime des éléments d'un tableau en partant du début suivant le paramètre entré
+// console.log(array3.slice(1)) -> renvoie ["Php", "Python"];
+// console.log(array3.slice(2)) -> renvoie ["Python"];
+//p slice( , )
+//c Supprime des éléments d'un tableau suivant les paramètres entrés
+// console.log(array3.slice(2,3)) -> renvoie ["Python"];
+//p indexOf()
+//c Donne l'index de ce qui est recherché
+// console.log(array3.indexOf("Python")) -> renvoie 2;
+//p forEach()
+// array3.forEach(languages => () => {
+//     console.log(languages); -> renvoie Js Php React
+// })
+//p every((***)=>***=="***")
+//c Check chaque élément d'un tableau s'il est == au paramètre entré
+// console.log(array3.every((language)) => language === "Php");
+//o -> renvoie false (booléen)
+//p some((***)=>***=="***")
+//c Check si il y a au moins un élément == au paramètre entré
+// console.log(array3.some((language)) => language === "Php");
+//o -> renvoie true (booléen)
+//p shift()
+//c Retire le 1er élément d'un tableau
+// console.log(array3.shift()) -> renvoie ["Php","Python"];
+//p pop()
+//c retire le dernier élément d'un tableau
+// console.log(array3.shift()) -> renvoie ["Js","Php"];
+//p splice()
+//c Remplace ou retire un ou des éléments suivant les paramètres entrés
+//y Premier exemple
+//g A partir de 1, je retire 1 élément et je remplace par C++
+// const restArray = array.splice(1 , 1, "C++");
+// console.log(restArray) -> renvoie ["Php"]
+// console.log(array3) -> renvoie ["Js","C++","Python"]
+//y Deuxième exemple
+//g A partir de 0, je retire 1 élément et je remplace par C++
+// const restArray = array.splice(0 , 1, "C++");
+// console.log(restArray) -> renvoie ["Js"]
+// console.log(array3) -> renvoie ["C++","Php","Python"]
+//y Troisième exemple
+//g A partir de 0, je retire 2 éléments et je remplace par C++
+// const restArray = array.splice(0 , 2, "C++");
+// console.log(restArray) -> renvoie ["Js","Php"]
+// console.log(array3) -> renvoie ["C++","Python"]
+//y Quatrième exemple
+//g A partir de 0, je retire 2 éléments et je remplace par array4
+// const restArray = array.splice(0 , 2, ...array4);
+// console.log(restArray) -> renvoie ["Js","Php"]
+// console.log(array3) -> renvoie ["Ruby", "React", "Python"]
