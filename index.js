@@ -203,3 +203,25 @@
 // console.log(newString); -> renvoie "je suis le plus beau des codeurs"
 
 //v METHODES POUR LES NUMBERS
+//p toFixed()
+//c Permet de réduire le nombre de chiffres après la virgule
+// let number = 42.1234
+// console.log(number.toFixed(2)); -> renvoie 42.12
+//p parseInt()
+//c Change une string en number
+// let number = "42"
+// console.log(number.parseInt()); -> renvoie 42
+//y Si il y a plusieurs chiffres dans une string, il renverra le 1er
+// let number = "42.12 est un chiffre"
+// console.log(number.parseInt()); -> renvoie 42
+//p parseFloat()
+//c Change une string en number, mais renvoie des décimaux
+// let number = "42.12 est un chiffre"
+// console.log(number.parseFloat()); -> renvoie 42.12
+//p console.log(Math.PI); -> renvoie 3.14......
+//p console.log(Math.round(3.5)); -> renvoie 4
+//p console.log(Math.floor(3.9)); -> renvoie 3
+//p console.log(Math.ceil(3.2)); -> renvoie 4
+//p console.log(Math.pow(2 , 7)); -> renvoie 128
+//p console.log(Math.sqrt(16)); -> renvoie 4
+//p console.log(Math.random()); -> renvoie x : 0 < x < 1
