@@ -33,3 +33,21 @@
 //-> " git commit -m 'commit' "
 //-> " git push -u origin main "
 //-> le nom du site sera " https://pseudo.github.io "
+
+//v Si on travaille en TEAM
+//p " git pull " -> récupère la MAJ sur le dépôt distant
+//p " .gitignore " -> pour bibliothèques ou frameworks
+
+//v Fichiers indispensables dans un projet
+//p " .gitignore " -> se fait dans VsCode
+//p README.md -> se fait sur Github
+
+//v Quand on travaille en TEAM, il faut faire des BRANCHES
+//p " git branch nomBranch " -> créer une branche
+//p " git branch " -> affiche les branches
+//p " git checkout nomBranch " -> change de branche
+//p " git merge " -> fusionne la branche
+
+//y " git push --set-upstream origin nomBranch "
+//c C'est comme un fork , on reprend tout le fichier ou 
+//c dossier et on le met autre part
