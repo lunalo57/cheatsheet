@@ -434,7 +434,42 @@
 // console.log(dateParser(iso));
 // 12 novembre 2022, 11:53
 
-//v LE DESTURCTURING
+//v LE DESTRUCTURING
+//y Premier exemple
+// let moreData ={
+//     destVar : ["Element 1" , "Element 2"]
+// };
+// console.log(moreData.destVar);
+// (2) ['Element 1', 'Element 2']
+//g Les 2 signifient la même chose
+// const { destVar } = moreData;
+// console.log(destVar);
+// (2) ['Element 1', 'Element 2']
+//y Deuxième exemple
+// let array5 = [70, 80, 90];
+// let [x, y, z] = array5;
+// console.log(x, y, z); -> renvoie 70 80 90
+//y Troisième exemple
+let date = new Date();
+let iso = date.toISOString();
+console.log(iso); 
+// -> 2022-11-12T18:35:45.071Z
+// const dateDestructuring = (chaine) => {
+//     let newDate = chaine.split("T")[0];
+//     let [y, m, d] = newDate.split("-");
+//     return [d, m, y].join("/");
+// }
+// console.log(dateDestructuring(iso));
+// -> 12/11/2022
+
+//v LES DATASETS
+
+
+
+
+
+
+
 
 
 //h-----------------------------------------------------------------------
