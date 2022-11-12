@@ -397,7 +397,42 @@
 //     .join("");
 
 //v LES DATES 
-
+//y Date Classique
+// let date = new Date();
+// console.log(date);
+// Sat Nov 12 2022 11:32:14 GMT+0100 (heure normale d’Europe centrale)
+//y Timestamp (le nombre ms depuis 1970)
+// let date = new Date();
+// let timestamp = Date.parse(date);
+// console.log(timestamp);
+// 1668249301000
+//y IsoString
+// let date = new Date();
+// console.log(date.toISOString());
+// 2022-11-12T10:37:33.065Z
+//r Fonction permettant de récupérer des dates correctes
+// let date = new Date();
+// const dateParser = (chaine) => {
+//     let newDate = new Date(chaine).toLocaleDateString("fr-FR", {
+//         year: "numeric",
+//         month: "long",
+//         day: "numeric",
+//         hour: "numeric",
+//         minute: "numeric",
+//     });
+//     return newDate;
+// }
+// console.log(dateParser(date));
+// 12 novembre 2022, 11:53
+// Si month: "short"; -> 12 11 2022
+// si month: "numeric"; -> 12/11/2022
+//g Fonctionne aussi avec timestamp
+// console.log(dateParser(timestamp));
+// 12 novembre 2022, 11:53
+//g Fonctionne avec ISO de la manière suivante
+// let iso = date.toISOString();
+// console.log(dateParser(iso));
+// 12 novembre 2022, 11:53
 
 
 //h-----------------------------------------------------------------------
