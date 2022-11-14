@@ -463,6 +463,18 @@ console.log(iso);
 // -> 12/11/2022
 
 //v LES DATASETS
+//y Ces exemples sont en rapport avec le code HTML
+//c Permet de manipuler le DOM
+//c C'est des données que l'on peut mettre dans des balises
+//c les balises en HTML sont en quelque sorte des objets
+//c Elles permettent de mettre des données dans des balises
+//c On peut les utiliser quand on ne veut pas utiliser les id ou les class
+// const h3js = document.getElementById('javascript');
+// console.log(h3js.dataset.lang); -> renvoie "js"
+//y Autre exemple
+// const h3 = document.querySelectorAll('h3');
+//g h3.forEach((languages) => console.log(languages.dataset.lang));
+// -> renvoie "js" "ph" "py"
 
 //v LES REGEX
 
