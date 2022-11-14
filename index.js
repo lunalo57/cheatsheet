@@ -477,16 +477,50 @@ console.log(iso);
 // -> renvoie "js" "ph" "py"
 
 //v LES REGEX
-
-
-
-
-
-
+//c Permet de tester les chaines de caractères pour voir si
+//c elles correspondent à ce que l'on attend
+//p search()
+// let mail = "quick_silver69@gmail.com"
+// console.log(mail.search(/quick/)); -> renvoie 0;
+// Si c'est true renvoie 0, si false renvoie -1
+//y les / slashs encadrent l'expression qu'il faut trouver
+//p replace( , )
+// let mail = "quick_silver69@gmail.com"
+// console.log(mail.replace(/quick/ , "fast")); 
+//o -> renvoie "de_silver@gmail.com"
+//p match()
+// let mail = "quick_silver33@gmail.com"
+//y Pas sensible à la casse avec le i
+// console.log(mail.match(/QuIck/)); -> renvoie null;
+// console.log(mail.match(/QuIck/i)); -> (renvoie true, un tableau et l'index) ou null;
+//y On peut chercher des lettres
+// console.log(mail.match(/[tui]/)); -> (renvoie true, un tableau et l'index) ou null;
+//y On peut chercher des chiffres
+// console.log(mail.match(/[123]/)); -> (renvoie true, un tableau et l'index) ou null;
+//y Tous les chiffres (s'arrête au premier chiffre)
+// console.log(mail.match(/\d/)); -> (renvoie true, un tableau et l'index) ou null;
+//y Toutes les lettres (s'arrête à la première lettre)
+// console.log(mail.match(/[a-z]/)); -> (renvoie true, un tableau et l'index) ou null;
+//y Tous les caractères (s'arrête au premier caractère)
+//y Ne comprend pas les caractères spéciaux
+// console.log(mail.match(/\w/)); -> (renvoie true, un tableau et l'index) ou null;
+//g Vérifier un mail
+// console.log(mail.match(/^[\w-_]+@[\w-]+\.[a-z]{2,4}$/i));
+//o -> (renvoie true, un tableau et l'index) ou null;
+// ^ = start of string
+// $ = end of string
+// il faut échapper le . sinon ça ne fonctionne pas
+// {2,4} = minimum 2 et maximum 4
+// i pour dire qu'on n'est pas sensible à la casse
+//g Séparateur de millier
+// let separator = 15484135345;
+// console.log(separator.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","));;
+//o -> renvoie 15,484,135,345
+// On transforme le nombre en chaine de caractères avec toString();
 
 //h-----------------------------------------------------------------------
 
-//j JAVASCRIPT 4/6 LES API                                               
+//j JAVASCRIPT 4/6 LES API                                                
 
 
 
