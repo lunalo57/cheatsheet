@@ -123,7 +123,7 @@
 
 //j JAVASCRIPT 3/6 LA DATA                                                
 
-//v LES STRUCTURES DE CONTROLE
+//v LES STRUCTURES DE CONTROLE ----------------------------------------
 //p IF ELSE 
 // if(){
 // }else{
@@ -158,7 +158,7 @@
 //     }
 // });
 
-//v METHODES POUR LES STRINGS
+//v METHODES POUR LES STRINGS --------------------------------------
 //p parseInt()
 //c Change le string en number
 //p typeof
@@ -202,7 +202,7 @@
 // let newString = string.replace("canon","beau");
 // console.log(newString); -> renvoie "je suis le plus beau des codeurs"
 
-//v METHODES POUR LES NUMBERS
+//v METHODES POUR LES NUMBERS ----------------------------------------
 //p toFixed()
 //c Permet de réduire le nombre de chiffres après la virgule
 // let number = 42.1234
@@ -226,7 +226,7 @@
 //p console.log(Math.sqrt(16)); -> renvoie 4
 //p console.log(Math.random()); -> renvoie x : 0 < x < 1
 
-//v METHODES POUR LES ARRAYS
+//v METHODES POUR LES ARRAYS ----------------------------------------
 //y Pour les prochains exemples, nous utiliserons ces tableaux
 //g-------------
 // let array3 = ['Js', 'Php', 'Python'];
@@ -295,7 +295,7 @@
 // console.log(restArray) -> renvoie ["Js","Php"]
 // console.log(array3) -> renvoie ["Ruby", "React", "Python"]
 
-//v IMPORTANT
+//v IMPORTANT -------------------------------------------------------
 //y Pour les prochains exemples, nous utiliserons ce tableau
 //g-------------
 // let arrayN = [4, 74, 28, 12, 1];
@@ -309,7 +309,7 @@
 // let arrayN2 = arrayN.push("coucou");
 // console.log(arrayN2) -> renvoie [4, 74, 28, 12, 1, "coucou"];
 
-//v LE TRIO GAGNANT : FILTER / SORT / MAP
+//v LE TRIO GAGNANT : FILTER / SORT / MAP --------------------------
 //y Pour les prochains exemples, nous utiliserons ce tableau
 //g-------------
 // let arrayN = [4, 74, 28, 12, 1];
@@ -353,7 +353,7 @@
 //      .join("");
 //o -> renvoie à l'écran une liste à puces
 
-//v METHODES POUR LES OBJECTS
+//v METHODES POUR LES OBJECTS ------------------------------------
 //y Pour les prochains exemples, nous utiliserons cet objet
 //g-------------
 // let data = [
@@ -396,7 +396,7 @@
 //     )
 //     .join("");
 
-//v LES DATES 
+//v LES DATES -----------------------------------------------
 //y Date Classique
 // let date = new Date();
 // console.log(date);
@@ -434,7 +434,7 @@
 // console.log(dateParser(iso));
 // 12 novembre 2022, 11:53
 
-//v LE DESTRUCTURING
+//v LE DESTRUCTURING ---------------------------------------
 //y Premier exemple
 // let moreData ={
 //     destVar : ["Element 1" , "Element 2"]
@@ -462,7 +462,7 @@ console.log(iso);
 // console.log(dateDestructuring(iso));
 // -> 12/11/2022
 
-//v LES DATASETS
+//v LES DATASETS -----------------------------------
 //y Ces exemples sont en rapport avec le code HTML
 //c Permet de manipuler le DOM
 //c C'est des données que l'on peut mettre dans des balises
@@ -476,7 +476,7 @@ console.log(iso);
 //g h3.forEach((languages) => console.log(languages.dataset.lang));
 // -> renvoie "js" "ph" "py"
 
-//v LES REGEX
+//v LES REGEX --------------------------------------
 //c Permet de tester les chaines de caractères pour voir si
 //c elles correspondent à ce que l'on attend
 //p search()
